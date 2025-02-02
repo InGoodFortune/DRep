@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "In Good Fortune",
+    "motivations": "I'm an ordinary individual who has experienced both financial highs and lows, I bring a unique perspective to my work. I have founded businesses and worked for others, and I currently serve as an E&I inspector and electrician, holding multiple relevant licenses. I believe we all can make difference. ",
+    "objectives": "I am convinced that the current economic systems of nations worldwide are inherently flawed and unsustainable. In my view, it is imperative that we adopt an economic model that is immune to inflationary pressures. \n\nMoreover, I advocate for a system that is inclusive, enabling all individuals to participate and have their voices heard. A transparent voting mechanism is essential to govern this economic model, ensuring it remains free from manipulation by any single entity. \n\nI believe Cardano offers a robust foundation, underpinned by thorough research and sound principles, upon which such a system can be constructed. \n\nI am eager to cast my vote in support of this vision and would be honored to represent your interests if you grant me the opportunity.",
+    "paymentAddress": "addr1qyr4haynqq2ng03mjys0xhk4hrcd4a2ckmhkavx809rhsvrpgm3pmf7fktj5r8lv8ct2jl3khmrwuq67gr79fu86uknsv8we0k",
+    "qualifications": "My dedication to understanding economic systems spans several years, and I am the founder of the nonprofit organization \"In Good Fortune.\" I have extensively studied market cycles, historical forms of government, and social institutions. In addition to my professional endeavors, I am an artist in both music and fine arts. My research indicates that NFTs will play a significant role in various aspects of our lives, including the arts, in the near future. I have also taught myself programming, recognizing the critical importance of artificial intelligence. These technologies, like all others, can be either beneficial or detrimental to humanity. It is up to us to educate ourselves, make informed choices, and ensure our voices are heard in shaping the future.\n",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "My Linkedin",
+        "uri": "https://www.linkedin.com/in/jonathan-e-blake"
+      }
+    ]
+  }
+}
